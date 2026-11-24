@@ -1,0 +1,55 @@
+# Validation rules and thresholds. Change the numbers here, not in the code.
+# severity: error   = must be fixed by the country before the data can be used
+#           warning = plausible but unusual; needs an explanation from the country
+
+checks:
+  non_numeric:
+    severity: error
+    description: Cell contains text that is not a number or an allowed code (m, a, x).
+  negative_value:
+    severity: error
+    description: Counts cannot be negative.
+  non_integer:
+    severity: warning
+    description: Counts of people should be whole numbers.
+  total_mismatch:
+    severity: error
+    description: A Total cell was overwritten with a number that differs from the sum of its ages.
+    tolerance: 0          # absolute difference allowed
+  enrolment_exceeds_population:
+    severity: warning
+    description: Enrolment at a single age is higher than the population of that age.
+    max_ratio: 1.05       # age-specific enrolment rate above 105% is flagged
+  age_cohort_break:
+    severity: warning
+    description: >
+      The cohort aged a in year t should be close in size to the cohort aged a-1 in year t-1
+      (all levels combined). A large jump or drop usually means misreported ages or years.
+    min_ratio: 0.80
+    max_ratio: 1.20
+    ages: [7, 11]         # primary ages, where nearly the whole cohort is enrolled
+  year_on_year_change:
+    severity: warning
+    description: Total for a level and sex changed by more than the threshold from the previous year.
+    max_change: 0.25
+  missing_latest_year:
+    severity: warning
+    description: No data reported for the latest year in the template.
+  ner_above_100:
+    severity: error
+    description: Net enrolment rate cannot exceed 100%.
+  ger_out_of_range:
+    severity: warning
+    description: Gross enrolment ratio outside the usual range.
+    min: 20
+    max: 150
+  gpi_out_of_range:
+    severity: warning
+    description: Gender parity index (GER female / GER male) outside the usual range.
+    min: 0.70
+    max: 1.30
+  ptr_out_of_range:
+    severity: warning
+    description: Pupil-teacher ratio outside the usual range.
+    min: 10
+    max: 80

@@ -1,0 +1,49 @@
+# Display labels used in the templates, with French, Spanish, Portuguese and Russian
+# versions. The English text is the key. Sheet names are kept in English on purpose:
+# they are stable machine keys, so formulas and scripts work for every language version.
+# The reader maps any translated label back to English before validation.
+
+Level:            {fr: "Niveau", es: "Nivel", pt: "Nível", ru: "Уровень"}
+Sex:              {fr: "Sexe", es: "Sexo", pt: "Sexo", ru: "Пол"}
+Age:              {fr: "Âge", es: "Edad", pt: "Idade", ru: "Возраст"}
+Indicator:        {fr: "Indicateur", es: "Indicador", pt: "Indicador", ru: "Показатель"}
+Field:            {fr: "Champ", es: "Campo", pt: "Campo", ru: "Поле"}
+Value:            {fr: "Valeur", es: "Valor", pt: "Valor", ru: "Значение"}
+Sheet:            {fr: "Feuille", es: "Hoja", pt: "Folha", ru: "Лист"}
+Year:             {fr: "Année", es: "Año", pt: "Ano", ru: "Год"}
+Source:           {fr: "Source", es: "Fuente", pt: "Fonte", ru: "Источник"}
+Notes:            {fr: "Notes", es: "Notas", pt: "Notas", ru: "Примечания"}
+
+Primary:          {fr: "Primaire", es: "Primaria", pt: "Ensino primário", ru: "Начальное образование"}
+Lower secondary:  {fr: "Premier cycle du secondaire", es: "Secundaria baja", pt: "Primeiro ciclo do ensino secundário", ru: "Первый этап среднего образования"}
+Population:       {fr: "Population", es: "Población", pt: "População", ru: "Население"}
+Male:             {fr: "Masculin", es: "Hombres", pt: "Masculino", ru: "Мужчины"}
+Female:           {fr: "Féminin", es: "Mujeres", pt: "Feminino", ru: "Женщины"}
+Both sexes:       {fr: "Deux sexes", es: "Ambos sexos", pt: "Ambos os sexos", ru: "Оба пола"}
+Total:            {fr: "Total", es: "Total", pt: "Total", ru: "Всего"}
+All ages:         {fr: "Tous âges", es: "Todas las edades", pt: "Todas as idades", ru: "Все возраста"}
+
+Country:          {fr: "Pays", es: "País", pt: "País", ru: "Страна"}
+ISO code:         {fr: "Code ISO", es: "Código ISO", pt: "Código ISO", ru: "Код ISO"}
+Survey year:      {fr: "Année de l'enquête", es: "Año de la encuesta", pt: "Ano do inquérito", ru: "Год обследования"}
+Contact person:   {fr: "Personne de contact", es: "Persona de contacto", pt: "Pessoa de contacto", ru: "Контактное лицо"}
+Contact email:    {fr: "Courriel de contact", es: "Correo electrónico de contacto", pt: "E-mail de contacto", ru: "Контактный e-mail"}
+
+Gross enrolment ratio (%):  {fr: "Taux brut de scolarisation (%)", es: "Tasa bruta de matrícula (%)", pt: "Taxa bruta de escolarização (%)", ru: "Валовой коэффициент охвата (%)"}
+
+"Country information":                   {fr: "Informations sur le pays", es: "Información del país", pt: "Informação do país", ru: "Сведения о стране"}
+"Population by single age and sex":      {fr: "Population par âge simple et par sexe", es: "Población por edad simple y sexo", pt: "População por idade simples e sexo", ru: "Население по однолетним возрастам и полу"}
+"Enrolment by level, sex and single age": {fr: "Effectifs par niveau, sexe et âge simple", es: "Matrícula por nivel, sexo y edad simple", pt: "Matrículas por nível, sexo e idade simples", ru: "Численность учащихся по уровню, полу и однолетнему возрасту"}
+"Teachers by level and sex":             {fr: "Enseignants par niveau et par sexe", es: "Docentes por nivel y sexo", pt: "Professores por nível e sexo", ru: "Учителя по уровню и полу"}
+"Calculated indicators (do not edit)":   {fr: "Indicateurs calculés (ne pas modifier)", es: "Indicadores calculados (no modificar)", pt: "Indicadores calculados (não editar)", ru: "Рассчитанные показатели (не изменять)"}
+"Metadata and data sources":             {fr: "Métadonnées et sources des données", es: "Metadatos y fuentes de datos", pt: "Metadados e fontes de dados", ru: "Метаданные и источники данных"}
+"Enter whole numbers. Codes: m = missing, a = not applicable, x = included elsewhere.":
+  fr: "Saisir des nombres entiers. Codes : m = manquant, a = sans objet, x = inclus ailleurs."
+  es: "Introduzca números enteros. Códigos: m = faltante, a = no aplicable, x = incluido en otra categoría."
+  pt: "Introduza números inteiros. Códigos: m = em falta, a = não aplicável, x = incluído noutra categoria."
+  ru: "Вводите целые числа. Коды: m = нет данных, a = неприменимо, x = включено в другую категорию."
+"Calculated automatically from the Enrolment and Population sheets.":
+  fr: "Calculé automatiquement à partir des feuilles Enrolment et Population."
+  es: "Calculado automáticamente a partir de las hojas Enrolment y Population."
+  pt: "Calculado automaticamente a partir das folhas Enrolment e Population."
+  ru: "Рассчитывается автоматически по листам Enrolment и Population."

@@ -1,0 +1,10 @@
+[project]
+name = "edu-template-pipeline"
+version = "0.1.0"
+description = "Automate updating, translating, validating and consolidating multi-year Excel education data templates"
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1", "pandas>=2.0", "PyYAML>=6.0", "Jinja2>=3.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
